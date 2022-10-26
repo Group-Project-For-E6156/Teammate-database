@@ -1,6 +1,6 @@
 create schema if not exists teammate_db;
 
-create table if not exists teammate_db.StudentsProfile
+/* create table if not exists teammate_db.StudentsProfile
 (
     Uni varchar(20),
     Timezone  varchar(128) not null,
@@ -16,7 +16,7 @@ insert into teammate_db.StudentsProfile(uni, Timezone, Major, CourseIntroduction
  ("rl3155", "EST", "DA","", "", "" ),
  ("yr2425", "PST", "EE","", "", "" ),
  ("hl3445", "EST", "CS","", "", "" ),
- ("bh2798", "EST", "CS","", "", "" )
+ ("bh2798", "EST", "CS","", "", "" ) */
 
 
 create table if not exists teammate_db.Team
@@ -29,6 +29,9 @@ create table if not exists teammate_db.Team
     Team_Captain varchar(128) not null,
     Primary key (Team_id),
 );
+ /* team_id integer auto generated 
+ number_needed integer 
+ created_at update_at delete_at*/
 
 insert into teammate_db.Team (Team_name, Team_id, Course_id, Team_message, Number_needed, Team_Captain) values
  ("6156_team_1", "team_1", "1", "Need_DB_Designer", "1","Anshuo Wu"),
@@ -55,7 +58,7 @@ create table if not exists teammate_db.StudentsInTeam
  ("hl3445", "5", "team_5"),
  ("bh2798", "6", "team_6")
 
-
+/* uni course_id varchar  index auto genereated integer pri*/
 
 
 
